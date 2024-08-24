@@ -1,5 +1,6 @@
 import { ThemeSwitcher } from '@/components/ThemeSwitcher/ThemeSwitcher'
-import { FC } from 'react'
+import { axiosInstance } from '@/methods/axiosConfig'
+import { FC, useEffect } from 'react'
 import styled from 'styled-components'
 
 const Page = styled.div`
@@ -27,6 +28,16 @@ const Subtitle = styled.h2`
 `
 
 export const WelcomePage: FC = () => {
+  const checkMockAuth = async () => {
+    const res = await axiosInstance.get('/auth')
+
+    console.log('Mock adapter check:', res.status === 200 ? 'success' : 'failed')
+  }
+
+  useEffect(() => {
+    void checkMockAuth()
+  }, [])
+
   return (
     <Page>
       <Title>React Typescript Boilerplate</Title>
