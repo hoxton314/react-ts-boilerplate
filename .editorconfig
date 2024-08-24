@@ -1,0 +1,25 @@
+# editorconfig.org
+# should be kept in sync with prettier config
+
+# This is the project's root directory
+root = true
+
+[*]
+# Use spaces for indentation
+indent_style = space
+# Each indent should contain 2 spaces
+indent_size = 2
+# The files are utf-8 encoded
+charset = utf-8
+# No whitespace at the end of line
+trim_trailing_whitespace = true
+# A file must end with an empty line - this is good for version control systems
+insert_final_newline = true
+# A line should not have more than this amount of chars
+max_line_length = 120
+# Single quote preferred over double quotes
+quote_type = single
+
+[*.md]
+# Markdown uses trailing spaces as delimeters
+trim_trailing_whitespace = false
