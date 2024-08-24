@@ -30,5 +30,10 @@ This is a boilerplate for a React project with TypeScript. It includes the follo
 
 ## Deployment
 
-1. Run `yarn build`
+1. Run
+
+   ```
+   $ yarn build
+   ```
+
 2. Deploy the `build` folder
