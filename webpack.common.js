@@ -71,10 +71,9 @@ export default {
     new ProgressPlugin(),
     new Dotenv(),
     new HtmlWebpackPlugin({
-      title: 'Signicat Onboarding Process',
+      title: 'React Boilerplate',
       template: './src/index.html',
       inject: true,
-      scripts: ['/methods/loadXS2A.ts'],
     }),
     new ProvidePlugin({
       process: 'process/browser',
