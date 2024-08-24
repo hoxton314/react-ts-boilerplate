@@ -11,13 +11,13 @@ This is a boilerplate for a React project with TypeScript. It includes the follo
 ## Getting Started
 
 1. Clone the repository
-`$ git clone https://github.com/hoxton314/react-ts-boilerplate`
+   `$ git clone https://github.com/hoxton314/react-ts-boilerplate`
 2. Install dependencies
-`$ yarn`
+   `$ yarn`
 3. Run development server
-`$ yarn start`
+   `$ yarn start`
 
-### Deployment
+## Deployment
 
 1. Run `yarn build`
 2. Deploy the `build` folder
